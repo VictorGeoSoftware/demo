@@ -1,14 +1,51 @@
-{
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
+[
+  {
+    "id": "string",
+    "vin": "string",
+    "customer": {
+      "firstName": "string",
+      "lastName": "string",
+      "emailAddress": "string",
+      "phoneNumber": "string"
+    },
+    "dealer": {
+      "name": "string",
+      "id": "string",
+      "countryId": "string",
+      "addressLine1": "string",
+      "addressLine2": "string",
+      "addressLine3": "string",
+      "addressLine4": "string",
+      "addressLine5": "string",
+      "phonenumber": "string",
+      "latitude": 0,
+      "longitude": 0,
+      "timeZone": "-08:00",
+      "comment": "string",
+      "supportedServices": [
+        {
+          "type": "YEARLY_MAINTENANCE",
+          "description": "string",
+          "price": "string",
+          "currency": "string"
+        }
+      ],
+      "supportedtransportModes": [
+        "LOANER"
+      ]
+    },
+    "services": [
+      {
+        "type": "YEARLY_MAINTENANCE",
+        "description": "string",
+        "price": "string",
+        "currency": "string"
+      }
+    ],
+    "transportModes": [
+      "LOANER"
+    ],
+    "startDateTimeUtc": "2019-05-16T14:00:00-08:00",
+    "durationInMinutes": "120"
   }
-}
+]
